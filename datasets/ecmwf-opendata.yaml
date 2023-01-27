@@ -1,0 +1,30 @@
+Name: ECMWF Open-data
+Description: ECWMF Open source data. Real-time forecasts.
+Documentation: https://www.ecmwf.int/en/forecasts/datasets/open-data
+Contact: usersupport@ecmwf.int
+ManagedBy: "[ECMWF](https://www.ecmwf.int/)"
+UpdateFrequency: Updated four times a day. One hour after the official forecast has been pushed.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - weather
+  - meteorological
+License: Attribution 4.0 International (CC BY 4.0) Copyright © 2023 European Centre for Medium-Range Weather Forecasts (ECMWF)
+Resources:
+  - Description: ECMWF Real-time forecasts.
+    ARN: arn:aws:s3:::ecmwf-forecasts
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse a Mirror of the Bucket](https://data.ecmwf.int/forecasts/)'
+DataAtWork:
+  Tutorials:
+    - Title: Technical documentation
+      URL: https://confluence.ecmwf.int/display/DAC/ECMWF+open+data%3A+real-time+forecasts
+      AuthorName: ECMWF
+  Tools & Applications:
+    - Title: Python package to access the data
+      URL: https://github.com/ecmwf/ecmwf-opendata
+      AuthorName: ECMWF
